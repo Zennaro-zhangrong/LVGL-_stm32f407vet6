@@ -1,0 +1,11 @@
+../lvgl/src/misc/lv_mem.h:163:20:lv_memset_00	1
+../lvgl/src/misc/lv_lru.c:73:12:lv_lru_create	5
+../lvgl/src/misc/lv_lru.c:102:6:lv_lru_del	7
+../lvgl/src/misc/lv_lru.c:137:14:lv_lru_set	13
+../lvgl/src/misc/lv_lru.c:189:14:lv_lru_get	6
+../lvgl/src/misc/lv_lru.c:212:14:lv_lru_remove	6
+../lvgl/src/misc/lv_lru.c:234:6:lv_lru_remove_lru_item	6
+../lvgl/src/misc/lv_lru.c:266:17:lv_lru_hash	5
+../lvgl/src/misc/lv_lru.c:301:12:lv_lru_cmp_keys	2
+../lvgl/src/misc/lv_lru.c:311:13:lv_lru_remove_item	2
+../lvgl/src/misc/lv_lru.c:331:24:lv_lru_pop_or_create_item	2

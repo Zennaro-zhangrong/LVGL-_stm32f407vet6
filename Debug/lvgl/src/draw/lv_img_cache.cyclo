@@ -1,0 +1,5 @@
+../lvgl/src/draw/../misc/lv_mem.h:163:20:lv_memset_00	1
+../lvgl/src/draw/lv_img_cache.c:63:25:_lv_img_cache_open	16
+../lvgl/src/draw/lv_img_cache.c:149:6:lv_img_cache_set_size	4
+../lvgl/src/draw/lv_img_cache.c:180:6:lv_img_cache_invalidate_src	5
+../lvgl/src/draw/lv_img_cache.c:204:13:lv_img_cache_match	4

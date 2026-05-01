@@ -1,0 +1,3 @@
+../Hardware/UART.c:35:6:Log_Init	8	static
+../Hardware/UART.c:46:6:log_printf	280	static
+../Hardware/UART.c:72:16:log_send_loop	24	static

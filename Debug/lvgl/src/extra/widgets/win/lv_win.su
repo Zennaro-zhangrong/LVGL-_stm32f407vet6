@@ -1,0 +1,6 @@
+../lvgl/src/extra/widgets/win/lv_win.c:44:12:lv_win_create	24	static
+../lvgl/src/extra/widgets/win/lv_win.c:54:12:lv_win_add_title	24	static
+../lvgl/src/extra/widgets/win/lv_win.c:64:12:lv_win_add_btn	40	static
+../lvgl/src/extra/widgets/win/lv_win.c:77:12:lv_win_get_header	16	static
+../lvgl/src/extra/widgets/win/lv_win.c:82:12:lv_win_get_content	16	static
+../lvgl/src/extra/widgets/win/lv_win.c:91:13:lv_win_constructor	40	static

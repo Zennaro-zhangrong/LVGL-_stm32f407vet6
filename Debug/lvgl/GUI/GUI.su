@@ -1,0 +1,4 @@
+../lvgl/GUI/../src/hal/../draw/../misc/lv_color.h:599:26:lv_color_hex	24	static
+../lvgl/GUI/../src/core/lv_disp.h:182:26:lv_scr_act	8	static
+../lvgl/GUI/GUI.c:18:6:my_gui_test	32	static
+../lvgl/GUI/GUI.c:39:19:GUI_GetParameter	4	static

@@ -1,0 +1,6 @@
+../lvgl/GUI/../src/widgets/lv_slider.h:84:20:lv_slider_set_value	24	static
+../lvgl/GUI/../src/widgets/lv_slider.h:106:20:lv_slider_set_range	24	static
+../lvgl/GUI/../src/widgets/lv_slider.h:130:23:lv_slider_get_value	16	static
+../lvgl/GUI/LCD&Battery_Setting.c:31:13:timer_update_ui	32	static
+../lvgl/GUI/LCD&Battery_Setting.c:66:6:TileView_LcdBatterySetting	40	static
+../lvgl/GUI/LCD&Battery_Setting.c:118:6:lvgl_battery_data_update	16	static

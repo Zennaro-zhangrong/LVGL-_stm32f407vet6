@@ -1,0 +1,6 @@
+../lvgl/GUI/../src/hal/../draw/../misc/../font/../misc/lv_area.h:294:26:lv_pct	16	static
+../lvgl/GUI/../src/hal/../draw/../misc/lv_color.h:599:26:lv_color_hex	24	static
+../lvgl/GUI/../src/hal/../draw/sw/../../core/lv_obj_pos.h:199:20:lv_obj_center	16	static
+../lvgl/GUI/PID_Parameter_Setting.c:22:13:sync_button_event_cb	40	static
+../lvgl/GUI/PID_Parameter_Setting.c:51:13:Switch_btnm_cb	32	static
+../lvgl/GUI/PID_Parameter_Setting.c:83:6:TileView_PidParamSetting	80	static

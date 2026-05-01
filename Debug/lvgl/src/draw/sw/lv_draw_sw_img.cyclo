@@ -1,0 +1,11 @@
+../lvgl/src/draw/sw/../../misc/lv_mem.h:131:22:lv_memcpy	1
+../lvgl/src/draw/sw/../../misc/lv_mem.h:163:20:lv_memset_00	1
+../lvgl/src/draw/sw/../../misc/lv_mem.h:173:20:lv_memset_ff	1
+../lvgl/src/draw/sw/../../misc/lv_color.h:474:42:lv_color_premult	1
+../lvgl/src/draw/sw/../../misc/lv_color.h:499:48:lv_color_mix_premult	1
+../lvgl/src/draw/sw/../../misc/lv_color.h:599:26:lv_color_hex	1
+../lvgl/src/draw/sw/../../misc/lv_area.h:110:20:lv_area_copy	1
+../lvgl/src/draw/sw/../../misc/lv_area.h:123:26:lv_area_get_width	1
+../lvgl/src/draw/sw/../../misc/lv_area.h:133:26:lv_area_get_height	1
+../lvgl/src/draw/sw/lv_draw_sw_img.c:44:28:lv_draw_sw_img_decoded	28
+../lvgl/src/draw/sw/lv_draw_sw_img.c:203:13:convert_cb	13

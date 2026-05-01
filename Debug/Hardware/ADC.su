@@ -1,0 +1,3 @@
+../Hardware/ADC.c:24:6:ADC_Init	8	static
+../Hardware/ADC.c:46:6:Joystick_ADC_Get	4	static
+../Hardware/ADC.c:78:6:HAL_ADC_ConvCpltCallback	16	static

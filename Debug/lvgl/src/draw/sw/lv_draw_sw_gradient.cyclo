@@ -1,0 +1,17 @@
+../lvgl/src/draw/sw/../../misc/lv_mem.h:131:22:lv_memcpy	1
+../lvgl/src/draw/sw/../../misc/lv_mem.h:163:20:lv_memset_00	1
+../lvgl/src/draw/sw/../../misc/lv_color.h:374:24:lv_color_to32	1
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:64:17:compute_key	1
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:71:15:get_cache_item_size	1
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:83:20:next_in_cache	4
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:96:17:iterate_cache	5
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:109:17:find_oldest_item_life	2
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:116:13:free_item	3
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:139:17:kill_oldest_item	2
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:150:17:find_item	2
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:157:20:allocate_item	8
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:233:6:lv_gradient_free_cache	1
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:240:6:lv_gradient_set_cache_size	2
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:249:13:lv_gradient_get	7
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:294:39:lv_gradient_calculate	6
+../lvgl/src/draw/sw/lv_draw_sw_gradient.c:339:6:lv_gradient_cleanup	2

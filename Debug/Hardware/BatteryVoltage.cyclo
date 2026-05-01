@@ -1,0 +1,9 @@
+../Hardware/BatteryVoltage.c:26:6:Battery_Voltage_Get_Callback	2
+../Hardware/BatteryVoltage.c:39:12:cmp_ushort	3
+../Hardware/BatteryVoltage.c:50:24:median_ushort_qsort	1
+../Hardware/BatteryVoltage.c:66:18:average_filter	2
+../Hardware/BatteryVoltage.c:88:14:Battery_Voltage_dropGet	1
+../Hardware/BatteryVoltage.c:107:14:Battery_Output_Get	1
+../Hardware/BatteryVoltage.c:121:14:Battery_volatge_Get	1
+../Hardware/BatteryVoltage.c:138:6:Battery_SamplingValue_Init	2
+../Hardware/BatteryVoltage.c:154:15:Battery_Percentage_Get	3
