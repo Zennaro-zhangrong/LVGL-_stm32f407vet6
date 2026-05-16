@@ -33,7 +33,6 @@
 #include "../../Hardware/UART.h"
 #include "../../Hardware/NRF24l01.h"
 #include "../../Hardware/ADC.h"
-#include "../../Hardware/BackUpSRAM.h"
 #include "../../lvgl/lvgl.h"
 #include "../../lvgl/demos/benchmark/lv_demo_benchmark.h"
 #include "../../lvgl/demos/music/lv_demo_music.h"
@@ -116,14 +115,11 @@ int main(void)
   /* USER CODE BEGIN 2 */
   Log_Init();
   ADC_Init();
-  BackUpSRAM_Init();
   lv_init();
   lv_port_disp_init();
   lv_port_indev_init();
   my_gui_test();
   NRF24L01_Init();
-  //NRF24L01_Test();
-  //ADC_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -132,10 +128,8 @@ int main(void)
   {
 	  HAL_Delay(0);
 	  lv_timer_handler();
-	  //NRF24L01_ProcessRxData();
 	  Battery_Percentage_Get();
 	  log_send_loop();
-	  //Joystick_Updata_TIM_CallBack();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -203,7 +197,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
  * */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     if (htim->Instance == TIM7) {
- //   	Joystick_Updata_TIM_CallBack();
     }
 }
 

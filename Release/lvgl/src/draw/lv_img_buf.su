@@ -1,0 +1,9 @@
+../lvgl/src/draw/lv_img_buf.c:41:12:lv_img_buf_get_px_color	24	static
+../lvgl/src/draw/lv_img_buf.c:100:10:lv_img_buf_get_px_alpha	40	static
+../lvgl/src/draw/lv_img_buf.c:155:6:lv_img_buf_set_px_alpha	24	static
+../lvgl/src/draw/lv_img_buf.c:206:6:lv_img_buf_set_px_color	32	static
+../lvgl/src/draw/lv_img_buf.c:265:6:lv_img_buf_set_palette	20	static
+../lvgl/src/draw/lv_img_buf.c:311:6:lv_img_buf_free	8	static
+../lvgl/src/draw/lv_img_buf.c:321:10:lv_img_buf_get_img_size	8	static
+../lvgl/src/draw/lv_img_buf.c:279:16:lv_img_buf_alloc	24	static
+../lvgl/src/draw/lv_img_buf.c:352:6:_lv_img_buf_get_transformed_area	40	static

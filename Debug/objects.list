@@ -34,7 +34,6 @@
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
 "./Hardware/ADC.o"
-"./Hardware/BackUpSRAM.o"
 "./Hardware/BatteryVoltage.o"
 "./Hardware/NRF24L01.o"
 "./Hardware/UART.o"

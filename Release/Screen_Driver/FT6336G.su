@@ -1,0 +1,5 @@
+../Screen_Driver/FT6336G.c:117:16:FT6336G_Read_Byte	40	static
+../Screen_Driver/FT6336G.c:92:23:FT6336G_Send_Byte.isra	32	static
+../Screen_Driver/FT6336G.c:146:6:FT6336G_Init	8	static
+../Screen_Driver/FT6336G.c:177:6:FT6336G_EXTI_Callback	8	static
+../Screen_Driver/FT6336G.c:192:6:FT6336G_GetCoordinate	40	static

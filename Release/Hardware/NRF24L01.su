@@ -1,0 +1,16 @@
+../Hardware/NRF24L01.c:41:16:SPI_ReadWriteByte	32	static
+../Hardware/NRF24L01.c:56:9:NRF24L01_ReadReg	16	static
+../Hardware/NRF24L01.c:75:6:NRF24L01_WriteReg	16	static
+../Hardware/NRF24L01.c:90:6:NRF24L01_ReadBuf	24	static
+../Hardware/NRF24L01.c:105:6:NRF24L01_WriteBuf	24	static
+../Hardware/NRF24L01.c:118:6:NRF24L01_FlushTX	8	static
+../Hardware/NRF24L01.c:130:6:NRF24L01_FlushRX	8	static
+../Hardware/NRF24L01.c:142:9:NRF24L01_ReadStatus	16	static
+../Hardware/NRF24L01.c:155:9:NRF24L01_Check	32	static
+../Hardware/NRF24L01.c:225:9:NRF24L01_Init	32	static
+../Hardware/NRF24L01.c:410:9:NRF24L01_SendFrame	32	static
+../Hardware/NRF24L01.c:476:6:NRF_EXTI_Callback	16	static
+../Hardware/NRF24L01.c:533:6:NRF24L01_ProcessRxData	32	static
+../Hardware/NRF24L01.c:605:6:NRF24L01_PrintRegisters	96	static
+../Hardware/NRF24L01.c:314:6:NRF24L01_Test	40	static
+../Hardware/NRF24L01.c:647:19:NRF24L01_Master_SendHeartbeat	40	static

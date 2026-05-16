@@ -6,21 +6,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Hardware/ADC.c \
-../Hardware/BackUpSRAM.c \
 ../Hardware/BatteryVoltage.c \
 ../Hardware/NRF24L01.c \
 ../Hardware/UART.c 
 
 OBJS += \
 ./Hardware/ADC.o \
-./Hardware/BackUpSRAM.o \
 ./Hardware/BatteryVoltage.o \
 ./Hardware/NRF24L01.o \
 ./Hardware/UART.o 
 
 C_DEPS += \
 ./Hardware/ADC.d \
-./Hardware/BackUpSRAM.d \
 ./Hardware/BatteryVoltage.d \
 ./Hardware/NRF24L01.d \
 ./Hardware/UART.d 
@@ -35,7 +32,7 @@ Hardware/UART.o: ../Hardware/UART.c Hardware/subdir.mk
 clean: clean-Hardware
 
 clean-Hardware:
-	-$(RM) ./Hardware/ADC.cyclo ./Hardware/ADC.d ./Hardware/ADC.o ./Hardware/ADC.su ./Hardware/BackUpSRAM.cyclo ./Hardware/BackUpSRAM.d ./Hardware/BackUpSRAM.o ./Hardware/BackUpSRAM.su ./Hardware/BatteryVoltage.cyclo ./Hardware/BatteryVoltage.d ./Hardware/BatteryVoltage.o ./Hardware/BatteryVoltage.su ./Hardware/NRF24L01.cyclo ./Hardware/NRF24L01.d ./Hardware/NRF24L01.o ./Hardware/NRF24L01.su ./Hardware/UART.cyclo ./Hardware/UART.d ./Hardware/UART.o ./Hardware/UART.su
+	-$(RM) ./Hardware/ADC.cyclo ./Hardware/ADC.d ./Hardware/ADC.o ./Hardware/ADC.su ./Hardware/BatteryVoltage.cyclo ./Hardware/BatteryVoltage.d ./Hardware/BatteryVoltage.o ./Hardware/BatteryVoltage.su ./Hardware/NRF24L01.cyclo ./Hardware/NRF24L01.d ./Hardware/NRF24L01.o ./Hardware/NRF24L01.su ./Hardware/UART.cyclo ./Hardware/UART.d ./Hardware/UART.o ./Hardware/UART.su
 
 .PHONY: clean-Hardware
 

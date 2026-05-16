@@ -1,0 +1,3 @@
+../Middleware/RingBuffer.c:18:6:RingBuffer_Init	0	static
+../Middleware/RingBuffer.c:32:15:RingBuffer_WriteByte	0	static
+../Middleware/RingBuffer.c:52:15:RingBuffer_ReadByte	0	static

@@ -1,0 +1,2 @@
+../lvgl/examples/porting/lv_port_indev.c:93:13:touchpad_read	24	static
+../lvgl/examples/porting/lv_port_indev.c:46:6:lv_port_indev_init	8	static

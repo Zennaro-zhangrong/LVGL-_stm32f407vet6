@@ -1,0 +1,3 @@
+../lvgl/GUI/NRF_Connect_Setting.c:33:13:state_btn_event_cb	2
+../lvgl/GUI/NRF_Connect_Setting.c:11:13:nrf_btm_event_cb	4
+../lvgl/GUI/NRF_Connect_Setting.c:56:6:TileView_NRFConnectSetting	1
