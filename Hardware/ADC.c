@@ -78,3 +78,4 @@ void Joystick_ADC_Get(void){
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc){
 	Battery_Voltage_Get_Callback(ADC_Buff[0]);
 }
+

@@ -120,16 +120,33 @@ int main(void)
   lv_port_indev_init();
   my_gui_test();
   NRF24L01_Init();
+  static uint32_t lasttime = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_Delay(0);
+
 	  lv_timer_handler();
 	  Battery_Percentage_Get();
 	  log_send_loop();
+	  /////////////////////////////////////////////////////
+	  if(HAL_GetTick() > lasttime + 200){
+		  lasttime = HAL_GetTick();
+		  uint8_t sendData[8] = {0};
+		  sendData[0] = (uint8_t)((param.Joystick_LX & 0xFF00) >> 8);
+		  sendData[1] = (uint8_t)(param.Joystick_LX & 0xFF);
+		  sendData[2] = (uint8_t)((param.Joystick_LY & 0xFF00) >> 8);
+		  sendData[3] = (uint8_t)(param.Joystick_LY & 0xFF);
+		  sendData[4] = (uint8_t)((param.Joystick_RX & 0xFF00) >> 8);
+		  sendData[5] = (uint8_t)(param.Joystick_RX & 0xFF);
+		  sendData[6] = (uint8_t)((param.Joystick_RY & 0xFF00) >> 8);
+		  sendData[7] = (uint8_t)(param.Joystick_RY & 0xFF);
+		  NRF24L01_SendDatas(0xAA,8,sendData);
+	  }
+	  ////////////////////////////////////////////////////
+	  //NRF24L01_ProcessRxData();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

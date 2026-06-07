@@ -19,7 +19,7 @@ extern "C" {
 #define SERIAL_PORT_NUMBER huart3
 
 //这里是环形缓冲区的长度（Byte）
-#define BUFFER_LENGTH 512
+#define BUFFER_LENGTH 2048
 
 
 

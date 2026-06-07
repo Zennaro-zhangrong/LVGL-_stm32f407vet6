@@ -78,14 +78,7 @@ lvgl/src/core/lv_refr.o: ../lvgl/src/core/lv_refr.c \
  ../lvgl/src/core/../font/lv_font.h \
  ../lvgl/src/core/../extra/others/snapshot/lv_snapshot.h \
  ../lvgl/src/core/../extra/others/snapshot/../../../lv_conf_internal.h \
- ../lvgl/src/core/../extra/others/snapshot/../../../core/lv_obj.h \
- ../lvgl/src/core/../widgets/lv_label.h \
- ../lvgl/src/core/../widgets/../lv_conf_internal.h \
- ../lvgl/src/core/../widgets/../core/lv_obj.h \
- ../lvgl/src/core/../widgets/../font/lv_font.h \
- ../lvgl/src/core/../widgets/../font/lv_symbol_def.h \
- ../lvgl/src/core/../widgets/../misc/lv_txt.h \
- ../lvgl/src/core/../widgets/../draw/lv_draw.h
+ ../lvgl/src/core/../extra/others/snapshot/../../../core/lv_obj.h
 ../lvgl/src/core/lv_refr.h:
 ../lvgl/src/core/lv_obj.h:
 ../lvgl/src/core/../lv_conf_internal.h:
@@ -188,10 +181,3 @@ lvgl/src/core/lv_refr.o: ../lvgl/src/core/lv_refr.c \
 ../lvgl/src/core/../extra/others/snapshot/lv_snapshot.h:
 ../lvgl/src/core/../extra/others/snapshot/../../../lv_conf_internal.h:
 ../lvgl/src/core/../extra/others/snapshot/../../../core/lv_obj.h:
-../lvgl/src/core/../widgets/lv_label.h:
-../lvgl/src/core/../widgets/../lv_conf_internal.h:
-../lvgl/src/core/../widgets/../core/lv_obj.h:
-../lvgl/src/core/../widgets/../font/lv_font.h:
-../lvgl/src/core/../widgets/../font/lv_symbol_def.h:
-../lvgl/src/core/../widgets/../misc/lv_txt.h:
-../lvgl/src/core/../widgets/../draw/lv_draw.h:

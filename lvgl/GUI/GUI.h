@@ -14,13 +14,16 @@ typedef struct {
     char Joystick_SwitchLoop;//速度闭环开关
     unsigned char Battery_Level;//电池电量 %0~99%
     float Battery_Voltage;//电池电压 Vol
-    unsigned char NRF_RateBtn;//设置NRF的传输速率
-    unsigned char NRF_Connect;//尝试重连按钮，0：关闭图像(红色），1：尝试连接（绿色)
+    unsigned char MAX_SpeedSet;//设置小车的速度增益系数
+    unsigned char NRF_ConnectState;//天线的连接状态
     unsigned short NRF_realRate;//实际的秒均传输速率
     unsigned short NRF_realDelay;//实际的通信延迟
+    unsigned char PID_Channel;//PID参数通道
     unsigned short *PID_Buffer;//PID参数地址
+    unsigned char video_transmission_switch;//图传开关
 }lvgl_parameter_t;
 
+extern lvgl_parameter_t param;
 void my_gui_test(void);
 void TileView_JoysticSetting(lv_obj_t * tileview);
 void TileView_PidParamSetting(lv_obj_t * tileview);
@@ -30,6 +33,8 @@ void lvgl_battery_data_update(unsigned char Battery_level, float Battery_Voltage
 void Joystick_Swich_EXTI_Callback(uint16_t GPIO_Pin);
 void TileView_PID_Parameter(lv_obj_t *    tileview );
 void TileView_Ladar_Pointmap(lv_obj_t *tileview );
+void NRF_ConnectState(uint8_t state);
+void NRF_TransmissionStatus_Update(void);
 lvgl_parameter_t *GUI_GetParameter(void);
 #endif
 

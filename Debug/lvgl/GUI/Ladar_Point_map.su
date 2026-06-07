@@ -1,4 +1,4 @@
 ../lvgl/GUI/../src/hal/../draw/../misc/lv_color.h:599:26:lv_color_hex	24	static
 ../lvgl/GUI/../src/hal/../draw/sw/../../core/lv_obj_pos.h:199:20:lv_obj_center	16	static
 ../lvgl/GUI/../src/lv_api_map.h:54:20:lv_obj_move_foreground	24	static
-../lvgl/GUI/Ladar_Point_map.c:12:6:TileView_Ladar_Pointmap	48	static
+../lvgl/GUI/Ladar_Point_map.c:12:6:TileView_Ladar_Pointmap	40	static

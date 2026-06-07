@@ -5,8 +5,7 @@
 #include <string.h>
 #include <stdio.h>
 
-// 心跳发送间隔（单位：ms），可按需修改
-#define HEARTBEAT_INTERVAL_MS 30000
+
 /* -------------------------- NRF24L01 SPI指令集 -------------------------- */
 #define NRF_CMD_R_REGISTER    0x00    // 读寄存器命令（需与寄存器地址拼接，如0x00 | 0x07 = 读STATUS寄存器）
 #define NRF_CMD_W_REGISTER    0x20    // 写寄存器命令（需与寄存器地址拼接，如0x20 | 0x00 = 写CONFIG寄存器）
@@ -66,9 +65,9 @@
 
 // 数据结构
 typedef struct {
-    uint8_t type;
-    uint8_t seq;       // 序列号
-    uint8_t data[CMD_DATA_LEN - 1]; // 数据段
+    uint8_t cmd;
+    uint8_t length;       // 序列号
+    uint8_t data[NRF_MAX_PAYLOAD_LEN - 2]; // 数据段
 } NRF_FrameTypeDef;
 
 typedef enum{
@@ -80,44 +79,25 @@ typedef enum{
 
 
 
-
+/* 引脚操作宏 ----------------------------------------------------------------*/
+#define NRF_CS_LOW()   HAL_GPIO_WritePin(NRF_CS_GPIO_Port, NRF_CS_Pin, GPIO_PIN_RESET)   // 选中NRF24L01
+#define NRF_CS_HIGH()  HAL_GPIO_WritePin(NRF_CS_GPIO_Port, NRF_CS_Pin, GPIO_PIN_SET)     // 释放NRF24L01
+#define NRF_CE_LOW()   HAL_GPIO_WritePin(NRF_CE_GPIO_Port, NRF_CE_Pin, GPIO_PIN_RESET)   // 禁用芯片（待机模式）
+#define NRF_CE_HIGH()  HAL_GPIO_WritePin(NRF_CE_GPIO_Port, NRF_CE_Pin, GPIO_PIN_SET)     // 使能芯片（接收/发送
 typedef struct{
-	SPI_HandleTypeDef SPI_CHANNEL;//使用的数据通道
-	uint16_t SPI_CS_Pin;//SPI_片选引脚
-	GPIO_TypeDef* SPI_CS_GPIO_Port;//SPI_片选引脚
-	uint16_t SPI_CE_Pin;//SPI_命令引脚
-	GPIO_TypeDef* SPI_CE_GPIO_Port;//SPI_命令引脚
+	SPI_HandleTypeDef *SPI_CHANNEL;//使用的数据通道
 	uint16_t SPI_IRQ_Pin;//SPI_中断引脚
 	GPIO_TypeDef* SPI_IRQ_GPIO_Port;//SPI_中断引脚
-	NRF_StatusTypeDef NRF_Part;//配置为主机或者从机
-	uint8_t DataStream_transmission_interval;/*数据流传输间隔，其作用是
-	在一连串的长数据流中可以插入更紧急的命令控制，避免数据流长时间占用通道导致
-	控制命令延迟过高*/
-
-
+	NRF_FrameTypeDef *tx_buffer;
+	NRF_FrameTypeDef *rx_buffer;
 }NRFHandleTypeDef;
 
-// 全局变量声明
-extern volatile uint8_t nrf_rx_ready;
-extern volatile uint8_t nrf_tx_ready;
-extern volatile uint8_t nrf_error_flag;
-extern NRF_FrameTypeDef nrf_rx_frame;
-extern NRF_FrameTypeDef nrf_tx_frame;
+
+
 
 // 函数声明
 uint8_t NRF24L01_Init(void);
-void NRF24L01_Test(void);
-uint8_t NRF24L01_Check(void);
-uint8_t NRF24L01_SendFrame(uint8_t frame_type, uint8_t *data, uint8_t len);
-uint8_t NRF24L01_ReadReg(uint8_t reg);
-void NRF24L01_WriteReg(uint8_t reg, uint8_t value);
-void NRF24L01_ReadBuf(uint8_t reg, uint8_t *buf, uint8_t len);
-void NRF24L01_WriteBuf(uint8_t reg, uint8_t *buf, uint8_t len);
-void NRF24L01_FlushTX(void);
-void NRF24L01_FlushRX(void);
-uint8_t NRF24L01_ReadStatus(void);
-void NRF24L01_PrintRegisters(void);
+uint8_t NRF24L01_SendDatas(uint8_t cmd, uint8_t len, uint8_t* data);
 void NRF24L01_ProcessRxData(void);
 void NRF_EXTI_Callback(uint16_t GPIO_Pin);
-HAL_StatusTypeDef NRF24L01_Master_SendHeartbeat(void);
 #endif // __NRF24L01_DMA_H

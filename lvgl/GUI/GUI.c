@@ -5,10 +5,23 @@ lvgl_parameter_t param ={
 	.Joystick_SwitchL = 0,
     .Joystick_SwitchR = 0,
 	.Battery_Level = 0,
-	.Battery_Voltage = 0
+	.Battery_Voltage = 0,
+	.video_transmission_switch = 0
 };
 
 
+static void tileview_event_cb(lv_event_t * e)
+{
+    // 获取事件对象（Tileview 本身）
+    lv_obj_t * tileview = lv_event_get_target(e);
+    lv_tileview_get_tile_act(tileview);
+    if(lv_tileview_get_tile_act(tileview) == lv_event_get_user_data(e)){
+    	param.video_transmission_switch = 1;
+    }else{
+    	param.video_transmission_switch = 0;
+    }
+
+}
 
 /*
  * 函数名：my_gui_test
@@ -32,7 +45,7 @@ void my_gui_test(void)
         TileView_PidParamSetting(tilevw3);
         TileView_Ladar_Pointmap(tilevw4);
         //TileView_PID_Parameter(tilevw5);
-
+        lv_obj_add_event_cb(tileview, tileview_event_cb, LV_EVENT_VALUE_CHANGED, tilevw4);
 
 }
 

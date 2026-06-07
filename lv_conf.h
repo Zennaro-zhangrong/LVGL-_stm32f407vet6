@@ -345,7 +345,7 @@
 
 /* 启用性能监视器：显示CPU使用率和FPS帧率
  | 【修改建议】调试阶段改为1，发布阶段改回0 */
-#define LV_USE_PERF_MONITOR 1
+#define LV_USE_PERF_MONITOR 0
 #if LV_USE_PERF_MONITOR
     #define LV_USE_PERF_MONITOR_POS LV_ALIGN_BOTTOM_RIGHT
 #endif
@@ -353,7 +353,7 @@
 /* 启用内存监视器：显示已用内存和内存碎片情况
  * 要求：必须使用LVGL内置内存管理（LV_MEM_CUSTOM = 0）
  | 【修改建议】调试阶段改为1，监控内存使用是否超出40KB限制 */
-#define LV_USE_MEM_MONITOR 1
+#define LV_USE_MEM_MONITOR 0
 #if LV_USE_MEM_MONITOR
     #define LV_USE_MEM_MONITOR_POS LV_ALIGN_BOTTOM_LEFT
 #endif

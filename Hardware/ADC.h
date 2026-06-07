@@ -26,6 +26,13 @@ typedef struct{
 	uint32_t swTimeStart;
 }Switch;
 
+
+extern Joystick Joystick_LY;
+extern Joystick Joystick_LX;
+extern Joystick Joystick_RY;
+extern Joystick Joystick_RX;
+
+
 void Joystick_ADC_Get(void);
 unsigned char Battery_Percentage_Get(void);
 

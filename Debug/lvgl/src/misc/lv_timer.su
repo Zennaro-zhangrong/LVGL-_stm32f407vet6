@@ -1,5 +1,5 @@
 ../lvgl/src/misc/lv_timer.c:55:6:_lv_timer_core_init	8	static
-../lvgl/src/misc/lv_timer.c:67:37:lv_timer_handler	40	static
+../lvgl/src/misc/lv_timer.c:67:37:lv_timer_handler	32	static
 ../lvgl/src/misc/lv_timer.c:153:14:lv_timer_create_basic	8	static
 ../lvgl/src/misc/lv_timer.c:167:14:lv_timer_create	32	static
 ../lvgl/src/misc/lv_timer.c:192:6:lv_timer_set_cb	16	static
