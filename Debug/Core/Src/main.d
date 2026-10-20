@@ -266,7 +266,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Src/../../Hardware/UART.h \
  ../Core/Src/../../Hardware/../Middleware/RingBuffer.h \
  ../Core/Src/../../Hardware/NRF24l01.h ../Core/Src/../../Hardware/ADC.h \
- ../Core/Src/../../Hardware/BackUpSRAM.h ../Core/Src/../../lvgl/lvgl.h \
+ ../Core/Src/../../lvgl/lvgl.h \
  ../Core/Src/../../lvgl/demos/benchmark/lv_demo_benchmark.h \
  ../Core/Src/../../lvgl/demos/benchmark/../lv_demos.h \
  ../Core/Src/../../lvgl/demos/benchmark/../../lvgl.h \
@@ -556,7 +556,6 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Src/../../Hardware/../Middleware/RingBuffer.h:
 ../Core/Src/../../Hardware/NRF24l01.h:
 ../Core/Src/../../Hardware/ADC.h:
-../Core/Src/../../Hardware/BackUpSRAM.h:
 ../Core/Src/../../lvgl/lvgl.h:
 ../Core/Src/../../lvgl/demos/benchmark/lv_demo_benchmark.h:
 ../Core/Src/../../lvgl/demos/benchmark/../lv_demos.h:

@@ -33,7 +33,6 @@
 #include "../../Hardware/UART.h"
 #include "../../Hardware/NRF24l01.h"
 #include "../../Hardware/ADC.h"
-#include "../../Hardware/BackUpSRAM.h"
 #include "../../lvgl/lvgl.h"
 #include "../../lvgl/demos/benchmark/lv_demo_benchmark.h"
 #include "../../lvgl/demos/music/lv_demo_music.h"
@@ -116,26 +115,38 @@ int main(void)
   /* USER CODE BEGIN 2 */
   Log_Init();
   ADC_Init();
-  BackUpSRAM_Init();
   lv_init();
   lv_port_disp_init();
   lv_port_indev_init();
   my_gui_test();
   NRF24L01_Init();
-  //NRF24L01_Test();
-  //ADC_Init();
+  static uint32_t lasttime = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_Delay(0);
+
 	  lv_timer_handler();
-	  //NRF24L01_ProcessRxData();
 	  Battery_Percentage_Get();
 	  log_send_loop();
-	  //Joystick_Updata_TIM_CallBack();
+	  /////////////////////////////////////////////////////
+	  if(HAL_GetTick() > lasttime + 200){
+		  lasttime = HAL_GetTick();
+		  uint8_t sendData[8] = {0};
+		  sendData[0] = (uint8_t)((param.Joystick_LX & 0xFF00) >> 8);
+		  sendData[1] = (uint8_t)(param.Joystick_LX & 0xFF);
+		  sendData[2] = (uint8_t)((param.Joystick_LY & 0xFF00) >> 8);
+		  sendData[3] = (uint8_t)(param.Joystick_LY & 0xFF);
+		  sendData[4] = (uint8_t)((param.Joystick_RX & 0xFF00) >> 8);
+		  sendData[5] = (uint8_t)(param.Joystick_RX & 0xFF);
+		  sendData[6] = (uint8_t)((param.Joystick_RY & 0xFF00) >> 8);
+		  sendData[7] = (uint8_t)(param.Joystick_RY & 0xFF);
+		  NRF24L01_SendDatas(0xAA,8,sendData);
+	  }
+	  ////////////////////////////////////////////////////
+	  //NRF24L01_ProcessRxData();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -203,7 +214,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
  * */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     if (htim->Instance == TIM7) {
- //   	Joystick_Updata_TIM_CallBack();
     }
 }
 

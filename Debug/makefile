@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (13.3.rel1)
+# Toolchain: GNU Tools for STM32 (14.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -127,8 +127,8 @@ all: main-build
 main-build: 20260114_Remote.elf secondary-outputs
 
 # Tool invocations
-20260114_Remote.elf 20260114_Remote.map: $(OBJS) $(USER_OBJS) D:\STM32_CubeMX\NEW_MX_Project\20260114_Remote\STM32F407VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "20260114_Remote.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\STM32_CubeMX\NEW_MX_Project\20260114_Remote\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20260114_Remote.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+20260114_Remote.elf 20260114_Remote.map: $(OBJS) $(USER_OBJS) C:\Users\zr186\Desktop\Github\LVGL-_stm32f407vet6\STM32F407VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "20260114_Remote.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\zr186\Desktop\Github\LVGL-_stm32f407vet6\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20260114_Remote.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

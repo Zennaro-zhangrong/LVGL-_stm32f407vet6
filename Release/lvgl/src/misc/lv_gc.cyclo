@@ -1,0 +1,2 @@
+../lvgl/src/misc/lv_mem.h:163:20:lv_memset_00	1
+../lvgl/src/misc/lv_gc.c:39:6:_lv_gc_clear_roots	1

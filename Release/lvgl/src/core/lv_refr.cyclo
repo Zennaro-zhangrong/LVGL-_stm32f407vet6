@@ -1,0 +1,14 @@
+../lvgl/src/core/lv_refr.c:1310:13:call_flush_cb	1
+../lvgl/src/core/lv_refr.c:805:19:lv_refr_get_top_obj	8
+../lvgl/src/core/lv_refr.c:103:6:_lv_refr_init	1
+../lvgl/src/core/lv_refr.c:130:6:lv_obj_redraw	7
+../lvgl/src/core/lv_refr.c:964:6:refr_obj	28
+../lvgl/src/core/lv_refr.c:845:13:refr_obj_and_children	6
+../lvgl/src/core/lv_refr.c:696:13:refr_area_part	60
+../lvgl/src/core/lv_refr.c:205:6:_lv_inv_area	14
+../lvgl/src/core/lv_refr.c:266:13:_lv_refr_get_disp_refreshing	1
+../lvgl/src/core/lv_refr.c:277:6:_lv_refr_set_disp_refreshing	1
+../lvgl/src/core/lv_refr.c:286:6:_lv_disp_refr_timer	53
+../lvgl/src/core/lv_refr.c:113:6:lv_refr_now	5
+../lvgl/src/core/lv_refr.c:454:6:lv_refr_reset_fps_counter	1
+../lvgl/src/core/lv_refr.c:460:10:lv_refr_get_fps_avg	2

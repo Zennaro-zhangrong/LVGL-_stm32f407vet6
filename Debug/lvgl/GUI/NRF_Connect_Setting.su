@@ -1,6 +1,7 @@
 ../lvgl/GUI/../src/hal/../draw/../misc/../font/../misc/lv_area.h:294:26:lv_pct	16	static
 ../lvgl/GUI/../src/hal/../draw/../misc/lv_color.h:599:26:lv_color_hex	24	static
 ../lvgl/GUI/../src/hal/../draw/sw/../../core/lv_obj_pos.h:199:20:lv_obj_center	16	static
-../lvgl/GUI/NRF_Connect_Setting.c:11:13:nrf_btm_event_cb	24	static
-../lvgl/GUI/NRF_Connect_Setting.c:33:13:state_btn_event_cb	32	static
-../lvgl/GUI/NRF_Connect_Setting.c:56:6:TileView_NRFConnectSetting	56	static
+../lvgl/GUI/NRF_Connect_Setting.c:14:13:nrf_btm_event_cb	24	static
+../lvgl/GUI/NRF_Connect_Setting.c:25:6:TileView_NRFConnectSetting	48	static
+../lvgl/GUI/NRF_Connect_Setting.c:74:6:NRF_ConnectState	24	static
+../lvgl/GUI/NRF_Connect_Setting.c:86:6:NRF_TransmissionStatus_Update	8	static

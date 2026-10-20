@@ -34,7 +34,7 @@ void TileView_Ladar_Pointmap(lv_obj_t *tileview ){
     lv_chart_set_range(chart, LV_CHART_AXIS_PRIMARY_X, 0, 255);//表格长256
     lv_chart_set_range(chart, LV_CHART_AXIS_PRIMARY_Y, 0, 255);//表格宽256
 
-    lv_chart_set_point_count(chart, 1024);//表格上的点数为1024点，对应最外围的大正方形
+    lv_chart_set_point_count(chart, 666);//表格上的点数为1024点，对应最外围的大正方形
 
     //创建唯一序列点，黑色，坐标范围(0,0)~(255,255)
     lv_chart_series_t * ser = lv_chart_add_series(chart,
@@ -57,14 +57,10 @@ void TileView_Ladar_Pointmap(lv_obj_t *tileview ){
 			y_arr[i] = 255;
 		}
 		// 填充数据（示例为50个点，沿 y=x 直线）
-		for(uint32_t i = 512; i < 768; i++) {
+		for(uint32_t i = 512; i < 666; i++) {
 			x_arr[i] = 255;
 			y_arr[i] = 768 - i;
 		}
-		// 填充数据（示例为50个点，沿 y=x 直线）
-	for(uint32_t i = 768; i < 1024; i++) {
-		x_arr[i] = 1024 - i;
-		y_arr[i] = 0;
-	}
+
 	lv_chart_refresh(chart);
 }

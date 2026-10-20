@@ -1,0 +1,14 @@
+../lvgl/src/core/lv_obj_style_gen.h:553:31:lv_obj_get_style_blend_mode	8	static
+../lvgl/src/core/lv_obj_style_gen.h:145:26:lv_obj_get_style_bg_color_filtered	16	static
+../lvgl/src/core/lv_obj_style_gen.h:451:26:lv_obj_get_style_text_color_filtered	16	static
+../lvgl/src/core/lv_obj_draw.c:39:6:lv_obj_init_draw_rect_dsc	24	static
+../lvgl/src/core/lv_obj_draw.c:191:6:lv_obj_init_draw_label_dsc	16	static
+../lvgl/src/core/lv_obj_draw.c:223:6:lv_obj_init_draw_img_dsc	16	static
+../lvgl/src/core/lv_obj_draw.c:252:6:lv_obj_init_draw_line_dsc	16	static
+../lvgl/src/core/lv_obj_draw.c:285:6:lv_obj_init_draw_arc_dsc	16	static
+../lvgl/src/core/lv_obj_draw.c:313:12:lv_obj_calculate_ext_draw_size	24	static
+../lvgl/src/core/lv_obj_draw.c:347:6:lv_obj_draw_dsc_init	16	static
+../lvgl/src/core/lv_obj_draw.c:353:6:lv_obj_draw_part_check_type	0	static
+../lvgl/src/core/lv_obj_draw.c:383:12:_lv_obj_get_ext_draw_size	0	static
+../lvgl/src/core/lv_obj_draw.c:359:6:lv_obj_refresh_ext_draw_size	24	static
+../lvgl/src/core/lv_obj_draw.c:389:17:_lv_obj_get_layer_type	0	static

@@ -1,0 +1,5 @@
+../lvgl/src/font/lv_font_loader.c:194:21:read_bits	4
+../lvgl/src/font/lv_font_loader.c:225:12:read_label	4
+../lvgl/src/font/lv_font_loader.c:117:6:lv_font_free	17
+../lvgl/src/font/lv_font_loader.c:587:9:load_kern	16
+../lvgl/src/font/lv_font_loader.c:86:13:lv_font_load	53

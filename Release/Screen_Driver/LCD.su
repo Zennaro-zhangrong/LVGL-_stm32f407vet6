@@ -1,0 +1,10 @@
+../Screen_Driver/LCD.c:199:13:LCD_Display_Data	16	static
+../Screen_Driver/LCD.c:187:13:LCD_Display_Command	16	static
+../Screen_Driver/LCD.c:174:6:LCD_Brightness	0	static
+../Screen_Driver/LCD.c:34:6:LCD_Init	16	static
+../Screen_Driver/LCD.c:311:6:LCD_Set_Page_Cursor	32	static
+../Screen_Driver/LCD.c:364:6:LCD_ScreenBuffer_Send	16	static
+../Screen_Driver/LCD.c:382:9:SPI_Transmission_ENQueue	20	static
+../Screen_Driver/LCD.c:418:6:SPI_Transmission_DEQueue	0	static
+../Screen_Driver/LCD.c:441:6:LCD_Apply_ScreenFilling	8	static
+../Screen_Driver/LCD.c:446:6:LCD_SPI_TxCpltCallback	8	static

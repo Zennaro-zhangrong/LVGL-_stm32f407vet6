@@ -1,9 +1,9 @@
 ../lvgl/GUI/../src/hal/../draw/../misc/../font/../misc/lv_area.h:294:26:lv_pct	2
 ../lvgl/GUI/../src/hal/../draw/../misc/lv_color.h:599:26:lv_color_hex	1
-../lvgl/GUI/Joystick_Setting.c:32:13:Update_Joystick_Pos	1
-../lvgl/GUI/Joystick_Setting.c:47:13:Updata_Joystick_Color	3
-../lvgl/GUI/Joystick_Setting.c:65:13:Joystick_Update_TIM_CallBack	1
-../lvgl/GUI/Joystick_Setting.c:76:13:switchA_event_cb	2
-../lvgl/GUI/Joystick_Setting.c:94:13:switchB_event_cb	2
-../lvgl/GUI/Joystick_Setting.c:112:6:TileView_JoysticSetting	1
-../lvgl/GUI/Joystick_Setting.c:199:6:Joystick_Swich_EXTI_Callback	5
+../lvgl/GUI/Joystick_Setting.c:34:13:Update_Joystick_Pos	1
+../lvgl/GUI/Joystick_Setting.c:48:13:Updata_Joystick_Color	3
+../lvgl/GUI/Joystick_Setting.c:66:13:Joystick_Update_TIM_CallBack	1
+../lvgl/GUI/Joystick_Setting.c:77:13:switchA_event_cb	2
+../lvgl/GUI/Joystick_Setting.c:95:13:switchB_event_cb	2
+../lvgl/GUI/Joystick_Setting.c:113:6:TileView_JoysticSetting	1
+../lvgl/GUI/Joystick_Setting.c:200:6:Joystick_Swich_EXTI_Callback	5

@@ -136,7 +136,6 @@ static float Battery_volatge_Get(void){
  * @注意：此函数放在ADC初始化函数之后
  * */
 void Battery_SamplingValue_Init(void){
-	uint16_t median_value = 0;
 	 for(int i = 0; i < ADC_SIZE; i++){
 		 HAL_Delay(5);
 		 Battery_Output_Get();

@@ -18,7 +18,10 @@ lv_obj_t * roller_D2;
 lv_obj_t * roller_D1;
 static uint16_t selected_idx = 0;
 static unsigned short PID_Parame[18] = {0};
-// 1. 先写回调函数（放在文件上方，或者声明后实现）
+
+
+
+
 static void sync_button_event_cb(lv_event_t * e)
 {
     // 获取事件类型（这里主要处理点击事件）
@@ -38,12 +41,12 @@ static void sync_button_event_cb(lv_event_t * e)
     	D = 100 * lv_roller_get_selected(roller_D3) +
     		10 * lv_roller_get_selected(roller_D2) +
     		lv_roller_get_selected(roller_D1);
-    	lvgl_parameter_t *Param = GUI_GetParameter();
 
     	PID_Parame[selected_idx * 3] = P;
     	PID_Parame[selected_idx * 3 + 1] = I;
     	PID_Parame[selected_idx * 3 + 2] = D;
-    	Param->PID_Buffer = PID_Parame;
+    	param.PID_Channel |= (0x01 << selected_idx);
+    	param.PID_Buffer = PID_Parame;
     }
 }
 

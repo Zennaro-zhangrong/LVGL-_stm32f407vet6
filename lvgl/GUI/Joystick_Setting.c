@@ -9,6 +9,8 @@
 #include "main.h"
 #include "../../lv_conf.h"
 #include "../../Hardware/ADC.h"
+
+
 lv_obj_t * Handle_bgl;
 lv_obj_t * Handle_bgr;
 lv_obj_t * Handle_mbl;
@@ -18,7 +20,7 @@ lv_point_t base_left, base_right;//摇杆的起始位置（绝对位置）
 Switch SW_L = {0, 11, 0};
 Switch SW_R = {0, 11, 0};
 
-extern lvgl_parameter_t param;
+
 extern Joystick Joystick_LY;
 extern Joystick Joystick_RY;
 extern Joystick Joystick_LX;
@@ -36,7 +38,6 @@ static void Update_Joystick_Pos(int16_t LX, int16_t LY, int16_t RX, int16_t RY){
     param.Joystick_LY = LY;
     param.Joystick_RX = RX;
     param.Joystick_RY = RY;
-    //log_printf("LX[%d]       LY[%d]       RX[%d]        RY[%d]\r\n",LX,LY,RX,RY);
 }
 
 /*

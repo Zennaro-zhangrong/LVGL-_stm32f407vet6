@@ -1,0 +1,2 @@
+../lvgl/GUI/GUI.c:18:6:my_gui_test	24	static
+../lvgl/GUI/GUI.c:39:19:GUI_GetParameter	0	static

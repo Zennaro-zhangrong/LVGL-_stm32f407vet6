@@ -1,0 +1,16 @@
+../lvgl/src/misc/lv_style.c:400:13:lv_style_set_prop_helper	1
+../lvgl/src/misc/lv_style.c:407:13:lv_style_set_prop_meta_helper	1
+../lvgl/src/misc/lv_style.c:151:6:lv_style_init	1
+../lvgl/src/misc/lv_style.c:165:6:lv_style_reset	5
+../lvgl/src/misc/lv_style.c:181:17:lv_style_register_prop	7
+../lvgl/src/misc/lv_style.c:217:17:lv_style_get_num_custom_props	1
+../lvgl/src/misc/lv_style.c:222:6:lv_style_remove_prop	14
+../lvgl/src/misc/lv_style.c:298:6:lv_style_transition_dsc_init	1
+../lvgl/src/misc/lv_style.c:313:18:lv_style_prop_get_default	17
+../lvgl/src/misc/lv_style.c:293:16:lv_style_get_prop	15
+../lvgl/src/misc/lv_style.c:367:6:lv_style_is_empty	3
+../lvgl/src/misc/lv_style.c:374:9:_lv_style_get_prop_group	2
+../lvgl/src/misc/lv_style.c:415:13:lv_style_set_prop_internal	12
+../lvgl/src/misc/lv_style.c:283:6:lv_style_set_prop	1
+../lvgl/src/misc/lv_style.c:288:6:lv_style_set_prop_meta	1
+../lvgl/src/misc/lv_style.c:381:9:_lv_style_prop_lookup_flags	6

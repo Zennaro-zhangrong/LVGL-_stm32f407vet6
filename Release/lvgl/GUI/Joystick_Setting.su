@@ -1,0 +1,5 @@
+../lvgl/GUI/Joystick_Setting.c:65:13:Joystick_Update_TIM_CallBack	24	static
+../lvgl/GUI/Joystick_Setting.c:94:13:switchB_event_cb	8	static
+../lvgl/GUI/Joystick_Setting.c:76:13:switchA_event_cb	8	static
+../lvgl/GUI/Joystick_Setting.c:112:6:TileView_JoysticSetting	24	static
+../lvgl/GUI/Joystick_Setting.c:199:6:Joystick_Swich_EXTI_Callback	16	static

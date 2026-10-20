@@ -1,0 +1,8 @@
+../lvgl/src/draw/sw/../../misc/lv_mem.h:173:20:lv_memset_ff	1
+../lvgl/src/draw/sw/lv_draw_sw_rect.c:324:13:draw_bg_img	9
+../lvgl/src/draw/sw/../../misc/lv_mem.h:131:22:lv_memcpy.isra	1
+../lvgl/src/draw/sw/lv_draw_sw_rect.c:1032:35:shadow_blur_corner	15
+../lvgl/src/draw/sw/lv_draw_sw_rect.c:97:13:draw_bg	32
+../lvgl/src/draw/sw/lv_draw_sw_rect.c:83:6:lv_draw_sw_bg	1
+../lvgl/src/draw/sw/lv_draw_sw_rect.c:1146:6:draw_border_generic	50
+../lvgl/src/draw/sw/lv_draw_sw_rect.c:67:6:lv_draw_sw_rect	100

@@ -1,0 +1,2 @@
+../Hardware/BackUpSRAM.c:17:6:BackUpSRAM_Init	24	static
+../Hardware/BackUpSRAM.c:38:6:BackUp_LvglParameter	16	static

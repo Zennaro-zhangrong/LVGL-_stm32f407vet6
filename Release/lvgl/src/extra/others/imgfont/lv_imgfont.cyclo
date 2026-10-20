@@ -1,0 +1,4 @@
+../lvgl/src/extra/others/imgfont/lv_imgfont.c:89:24:imgfont_get_glyph_bitmap	2
+../lvgl/src/extra/others/imgfont/lv_imgfont.c:97:13:imgfont_get_glyph_dsc	6
+../lvgl/src/extra/others/imgfont/lv_imgfont.c:49:13:lv_imgfont_create	2
+../lvgl/src/extra/others/imgfont/lv_imgfont.c:75:6:lv_imgfont_destroy	2

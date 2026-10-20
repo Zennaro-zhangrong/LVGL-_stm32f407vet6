@@ -6,4 +6,4 @@
 ../Hardware/BatteryVoltage.c:107:14:Battery_Output_Get	1
 ../Hardware/BatteryVoltage.c:121:14:Battery_volatge_Get	1
 ../Hardware/BatteryVoltage.c:138:6:Battery_SamplingValue_Init	2
-../Hardware/BatteryVoltage.c:154:15:Battery_Percentage_Get	3
+../Hardware/BatteryVoltage.c:153:15:Battery_Percentage_Get	3

@@ -17,5 +17,5 @@
 ../lvgl/src/draw/lv_img_decoder.c:480:10:lv_img_decoder_built_in_read_line	13
 ../lvgl/src/draw/lv_img_decoder.c:516:6:lv_img_decoder_built_in_close	5
 ../lvgl/src/draw/lv_img_decoder.c:537:17:lv_img_decoder_built_in_line_true_color	4
-../lvgl/src/draw/lv_img_decoder.c:562:17:lv_img_decoder_built_in_line_alpha	12
-../lvgl/src/draw/lv_img_decoder.c:653:17:lv_img_decoder_built_in_line_indexed	10
+../lvgl/src/draw/lv_img_decoder.c:562:17:lv_img_decoder_built_in_line_alpha	11
+../lvgl/src/draw/lv_img_decoder.c:653:17:lv_img_decoder_built_in_line_indexed	9

@@ -1,0 +1,7 @@
+../lvgl/src/widgets/lv_slider.h:177:32:lv_slider_get_mode	8	static
+../lvgl/src/widgets/lv_slider.c:80:13:lv_slider_constructor	16	static
+../lvgl/src/widgets/lv_slider.c:412:13:position_knob	32	static
+../lvgl/src/widgets/lv_slider.c:332:13:draw_knob	472	static
+../lvgl/src/widgets/lv_slider.c:95:13:lv_slider_event	56	static
+../lvgl/src/widgets/lv_slider.c:60:12:lv_slider_create	8	static
+../lvgl/src/widgets/lv_slider.c:68:6:lv_slider_is_dragged	0	static
